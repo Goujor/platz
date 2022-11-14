@@ -26,9 +26,7 @@
             <div class="container object">
 
                 <div id="main-container-image">
-
-                    test
-
+                    
                     @yield('content')
 
                 </div>
