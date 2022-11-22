@@ -9,4 +9,4 @@
     <link rel="icon" type="image/png" href="img/small-logo-01.png">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,900,900italic,700italic,700,500italic,400italic,500,300italic,300' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-	<link href='style.css' rel='stylesheet' type='text/css'>
+	@yield('css')

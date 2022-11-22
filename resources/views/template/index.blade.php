@@ -23,17 +23,7 @@
 
         <div id="wrapper-container">
 
-            <div class="container object">
-
-                <div id="main-container-image">
-                    
-                    @yield('content')
-
-                </div>
-
-            </div>
-
-            @include('template.partials._pagination')
+            @yield('content')
 
             @include('template.partials._name')
 

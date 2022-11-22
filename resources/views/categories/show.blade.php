@@ -5,7 +5,7 @@
 @endsection
 
 @section('title')
-    HomePage
+    {{ $category->name }}
 @endsection
 
 @section('content')
@@ -16,7 +16,10 @@
             
             <section class="work">
 
-                @foreach ($ressources as $ressource)
+                <h1>Les articles de la catégorie <br/>"{{ $category->name}}"
+                </h1>
+
+                @foreach ($category->ressource as $ressource)
                     <figure class="white">
                         <a href="{{ Route('ressources.show', ['ressource' => $ressource->id])}}">
                             <img src="img/{{ $ressource->image }}" alt="" />
@@ -38,7 +41,5 @@
         </div>
 
     </div>
-
-    @include('template.partials._pagination')
 
 @endsection

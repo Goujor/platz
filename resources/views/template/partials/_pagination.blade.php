@@ -1,7 +1,7 @@
 <div id="wrapper-oldnew">
     <div class="oldnew">
         <div class="wrapper-oldnew-prev">
-            <div id="oldnew-prev"></div>
+            {{ $ressources->onEachSide(5)->links() }}
         </div>
     </div>
 </div>

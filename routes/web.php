@@ -14,8 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('ressources.index');
-});
+    return view('ressources.index' , ['ressources' => \App\Models\Ressource::paginate(24)
+    ]);
+})->name('ressources.index');
+
+Route::get('/ressources/{ressource}', function (\App\Models\Ressource $ressource) {
+    return view('ressources.show', ['ressource' => $ressource]);
+})->name('ressources.show');
+
+Route::get('/categories/{category}', function (\App\Models\Category $category) {
+    return view('categories.show', ['category' => $category]);
+})->name('categories.show');
 
 
 Route::group(['prefix' => 'admin'], function () {

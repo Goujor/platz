@@ -1,0 +1,1 @@
+{{-- {{ Illuminate\Support\Facades\Storage::size($ressource->file)}} --}}
